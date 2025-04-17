@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quà Sinh Nhật Tuấn</title>
+  <style>
+@keyframes money-fall {
+  0% {
+    transform: translateY(-100vh) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+.money {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW1TDJObPt7LuOvhnF2G6Xas3ZAujm5kSIgg&s') no-repeat center/contain; 
+  animation: money-fall 4s linear infinite;
+  pointer-events: none;
+}
+
+.money:nth-child(odd) {
+  animation-duration: 5s;
+}
+
+.money:nth-child(even) {
+  animation-duration: 6s;
+}
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #ecf0f1; /* Màu nền trung tính và sạch sẽ */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      padding: 20px;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .gift-box {
+      width: 220px;
+      height: 220px;
+      background: url('https://i.pinimg.com/736x/81/e4/39/81e439bcf81933cac53075b5c53f3451.jpg') no-repeat center center;
+      background-size: cover;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px; /* Cách phần tử tiếp theo */
+    }
+    .gift-box:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    .message {
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      display: none;
+      max-width: 90vw;
+      max-height: 80vh;
+      overflow-y: auto;
+      text-align: left;
+      line-height: 1.8;
+      color: #333;
+      font-size: 1.2rem;
+      position: relative;
+      margin-top: 20px;
+    }
+    .message h2 {
+      color: #34495e; /* Màu xám đậm cho tiêu đề */
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+    .message p {
+      color: #555; /* Màu xám trung tính cho nội dung */
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+    .money-img {
+      display: block;
+      margin: 0px auto;
+      width: 220px;
+      height: 300px;
+      border: 5px solid #ecf0f1; 
+      background-size: cover;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+  </style>
+</head>      
+  <body>
+    <div class="gift-box" onclick="openGift()"></div>
+    <div class="message" id="giftMessage">
+      <h2>🎉 Chúc mừng sinh nhật Tuấn! 🎉</h2>
+      <p>
+        Tuổi mới, Vy chúc Tuấn thật nhiều sức khỏe, niềm vui, may mắn và cả thành công nữa. Năm nay sẽ là một năm rất đặc biệt, là dấu mốc trưởng thành, là khoảng thời gian Tuấn phải bước ra khỏi chiếc kén an toàn để đối diện với những lựa chọn, những giấc mơ, và cả những nỗi lo của riêng mình.
+        <br><br>
+        <strong>Điều đầu tiên, Vy muốn nói với Tuấn là chuyện học tập và tương lai.</strong> Vy biết Tuấn đang có rất nhiều băn khoăn: IELTS, đại học, ngành học... Có thể bây giờ Tuấn nghĩ mọi thứ vẫn còn quá mơ hồ và xa vời để hình dung về nó, nhưng đây là lúc rất quan trọng để bắt đầu. Chinh phục IELTS không đơn thuần là band điểm hay một tấm bằng. Nó còn là khoảng thời gian để Tuấn được thả mình trong thế giới của sự quyết tâm về mục tiêu, học cách nỗ lực mỗi ngày, học cách kiên nhẫn với chính mình. Vy không thần thánh hoá IELTS, nhưng Vy tin rằng: nếu đi kèm với ý chí và định hướng đúng đắn, nó sẽ mở ra cho em nhiều cánh cửa mà chính Tuấn cũng không ngờ đến. Một năm có đủ thời gian, đủ môi trường, đủ cơ hội và có cả chính sự nỗ lực của bản thân. Mình có thể vấp ngã một lần, hai lần, nhưng trong kỳ thi đại học, hãy cố không được vấp. Và một điều nữa, Vy muốn hỏi thẳng: <strong>Tuấn có thật sự thích ngành Kinh tế không? </strong> Hay đó là vì Vy lỡ gieo vào Tuấn một hướng đi, để rồi Tuấn quên mất việc lắng nghe chính trái tim mình? Dù là Kinh tế, IT hay bất kỳ ngành nào khác, thì chỉ khi mình thật sự yêu thích, mới có thể đi đường dài. Vy cần một buổi nói chuyện nghiêm túc, rõ ràng để có thể giúp Tuấn xác định lại hướng đi của mình. Đừng học vì ai, hãy học vì chính mình. Bên cạnh kiến thức chuyên môn, Tuấn hãy nhớ rằng kỹ năng mềm, ngoại ngữ, tư duy, giao tiếp và cả ngoại hình đều cực kỳ quan trọng. Từng bước đi hiện tại chính là tấm vé cho tương lai. Và mỗi bước đó đều được trả bằng tiền, bằng thời gian, công sức và sự đánh đổi.
+        <br><br>
+        <strong> Điều thứ hai là chuyện tình cảm. </strong> Tình yêu là một phần không thể thiếu trong cuộc sống, nhưng cũng không ai chết vì thiếu nó cả. Vy ủng hộ việc yêu đương nhưng không mù quáng. Bé kia năm nay lớp 12 rồi, đang đứng trước ngã rẽ quan trọng. Nếu em ấy chọn con đường du học thì đó sẽ là thử thách lớn đối với cả hai. Nếu Tuấn là người bản lĩnh, thì hãy mạnh mẽ khi những thử thách ập đến. Có những tình yêu không cần nắm giữ, mà là buông tay đúng lúc để cả hai có thể tự do, trưởng thành, và hạnh phúc hơn. Đừng nghĩ rằng mất đi một người là đánh mất tất cả. Hai đứa còn quá trẻ để gánh trên vai những điều chưa đến lúc. Vy mong rằng nếu có buông tay, thì đó là một sự buông tay chín chắn để có thể quay lại trong một phiên bản tốt hơn của nhau. Còn nếu tình cảm vẫn đủ lớn, và còn bên nhau đến khi Tuấn học xong lớp 12. Vy sẽ mở lời với mẹ. Vì yêu không phải là giấu diếm, mà là đủ trưởng thành để chịu trách nhiệm. Và vì một tình yêu đẹp thì không nên nép mình trong bóng tối.
+        <br><br>
+        <strong>Điều thứ ba là gia đình.</strong> Vy biết Tuấn vẫn còn thiếu sự chín chắn để có thể bao dung cho em út đặc biệt là Bo. Bo có thể vô tư, vô tâm và chưa có nhiều góc nhìn trưởng thành. Ở đâu đó trong Bo vẫn còn là sự ích kỉ, là những mơ mộng thiếu thực tế, nhưng nó không phải là đứa em tệ. Với Vy, King là hình ảnh ngày xưa của chính Vy, một đứa trẻ ngoan thường không có kẹo. Tuấn hãy quan tâm, chăm sóc các em nhiều hơn. Làm gương, dạy dỗ và âm thầm nỗ lực không chỉ vì mình, mà vì cả những người sau lưng mình nữa.
+        Vy ước có thể chia sẻ với Tuấn nhiều hơn, dạy Tuấn nhiều điều tốt đẹp hơn… Nhưng Vy muốn Tuấn nhớ một điều: Đừng áp lực vì Vy, vì những kỳ vọng, hay vì bất kỳ ai. Vy cũng đang bon chen, đang cố gắng từng ngày để là bờ vai, là chỗ dựa cho đại gia đình mình.
+        Ước mơ của Vy là một ngày nhà mình đoàn kết hơn nữa. Anh Tâm sẽ học hành đàng hoàng, tự tin. Và từng người đều sống một cuộc đời hạnh phúc.
+        Tuấn còn một năm để sống cùng gia đình. Có thể Tuấn đã sống 18 năm ở Hội An nên đôi khi cảm thấy chật chội, muốn vẫy vùng. Bởi chim tự do sẽ phải tự bay, phải tự kiếm ăn, tự tránh bẫy. Đến một lúc nào đó, em sẽ thấy mình nhớ cái lồng nhỏ đầy yêu thương mà trước kia từng thấy tù túng. Vy đã không nhận ra điều đó cho đến khi vào Sài Gòn. Vì vậy, khi còn ở nhà, hãy yêu thương, phụ giúp ba mẹ, tận hưởng những phút giây quý giá với ông bà ngoại, ông nội ba mẹ… Vì ngoài xã hội, sẽ không có tình cảm nào chân thành như tình thân.
+        <br><br>
+        Năm nay Vy vẫn sẽ gửi 1 triệu lì xì sinh nhật. Có thể không nhiều, nhưng Vy muốn Tuấn bắt đầu học cách quản lý tiền bạc, quản lý chính mình. Tiền bạc có thể mất, nhưng bài học từ nó sẽ giúp Tuấn trưởng thành.. Hãy tiết kiệm, tiêu đúng cách vì sau này Tuấn còn phải dùng tiền không chỉ cho mình, mà cho cả những người Tuấn yêu thương. Dùng số tiền này để mua món quà mình thích, hay dẫn bạn bè đi chơi, đi ăn, miễn sao nó khiến Tuấn thấy vui vẻ và ý nghĩa. Chúc Tuấn một sinh nhật thật hạnh phúc.
+      </p>
+      <img class="money-img" src="https://scontent.fsgn2-6.fna.fbcdn.net/v/t39.30808-6/491807586_1039825574719726_254697341716982221_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=X7WgFeIpDesQ7kNvwHvz3gc&_nc_oc=AdkQdRiy8Pn91INS0T54MEhgfnK4k3NcRvoIpAusiF5nGqiFLHGWkzCQTmu-1eJ5iTk&_nc_zt=23&_nc_ht=scontent.fsgn2-6.fna&_nc_gid=K5_tBTuygwF0I9CLAOBi0g&oh=00_AfFv9KzZ_qhnu4FjMJakfi1_LIDDgAPmlNWRYrivHwm6jQ&oe=6806A7BC"/>
+    </div>
+
+    <script>
+      function openGift() {
+        document.getElementById('giftMessage').style.display = 'block';
+      }
+
+window.onload = function() {
+  const numMoney = 50; // Số lượng tiền rơi
+  for (let i = 0; i < numMoney; i++) {
+    const money = document.createElement('div');
+    money.classList.add('money');
+    
+    // Cài đặt vị trí ngẫu nhiên
+    money.style.left = `${Math.random() * 100}vw`; // Vị trí ngang ngẫu nhiên
+    
+    // Thêm tiền vào body
+    document.body.appendChild(money);
+    
+    // Xóa tiền sau khi hiệu ứng kết thúc
+    setTimeout(() => {
+      money.remove();
+    }, 6000); // Sau 6 giây tiền sẽ bị xóa
+  }
+}
+
+
+    </script>
+  </body>
+</html>
